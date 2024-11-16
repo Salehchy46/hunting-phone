@@ -10,9 +10,47 @@
 </head>
 <body>
   <header>
-    <h1>Phone Hunting</h1>
+    
   </header>
-  <main></main>
+  <main class="container mx-auto mt-8">
+<!-- Search result section -->
+    <section class="bg-gray-100 p-4 m-4">
+      <input id="search-field" type="text" placeholder="Search..." class="input input-bordered w-full max-w-xs" />
+      <button class="btn btn-accent" onclick="handleSearch()">Search</button>
+
+    </section>
+    <section>
+      <div id="loading-spinner" class="text-center my-40 hidden">
+        <span class="loading loading-spinner loading-lg"></span>
+      </div>
+      <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+      
+        <!-- <div class="card bg-gray-100 w-96 shadow-xl">
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <!-- Show all button -->
+      <div id="show-all-phone" class="hidden">
+        <button class="btn btn-accent">Show All</button>
+      </div>
+    </section>
+
+    <!-- Spinner or loader -->
+    <section>
+      
+    </section>
+  </main>
   <footer></footer>
   <script src="phone.js"></script>
 </body>
