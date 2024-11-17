@@ -41,13 +41,28 @@
         </div> -->
       </div>
       <!-- Show all button -->
-      <div id="show-all-phone" class="hidden">
-        <button class="btn btn-accent">Show All</button>
+      <div id="show-all-phone" class="hidden text-center my-8">
+        <button onclick="showAllButton()" class="btn btn-accent">Show All</button>
       </div>
     </section>
 
-    <!-- Spinner or loader -->
+    <!-- Modal -->
     <section>
+      <!-- Open the modal using ID.showModal() method -->
+      <dialog id="show_details_modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <h3 id="show-detail-phone-name" class="text-lg font-bold"></h3>
+          <div id="show-detail-container">
+
+          </div>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
       
     </section>
   </main>
